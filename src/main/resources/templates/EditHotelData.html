@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container bg-light">
+		<form action="" th:action="@{/register/update}" method="POST"
+			th:object="${hotel}">
+			<div class="row mt-5">
+				<div class="col-4">Hotel Id:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{hotelId}" readonly="readonly" class="form-control">
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Hotel Name:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{hotelName}" class="form-control">
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Owner Name:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{ownerName}" class="form-control">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Room Number:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{roomNumber}" class="form-control">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Bed Number:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{bedNumber}" class="form-control">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Customer Name:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{customerName}" class="form-control">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Joining Date:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{joiningDate}" class="form-control">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Customer Mobile No:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{mobileNumber}" class="form-control">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Customer Address:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{customerAddress}" class="form-control">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-4">Fees:</div>
+				<div class="col-4">
+					<input type="text" th:field="*{fees}" class="form-control">
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<input type="submit" value="Update" class="btn btn-success">
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+</body>
+</html>
